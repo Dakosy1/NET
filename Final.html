@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Website - Shopping cart</title>
+    <link rel="stylesheet" href="/Final Project/css/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="description" content="Free open source Tailwind CSS Store template">
+    <meta name="keywords" content="tailwind,tailwindcss,tailwind css,css,starter template,free template,store template, shop layout, minimal, monochrome, minimalistic, theme, nordic">
+    
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/>
+	
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:200,400&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <header>
+
+        <div class="nav container">
+            <a href="#" class="logo">Ipochino</a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+    
+            <ul class="navbar">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Price</a></li>
+                <li><a href="#services">Service</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <!-- Dark Mode -->
+                <div class="bx bx-moon" id="darkmode"></div>
+            </ul>
+            <i class='bx bx-shopping-bag' id="cart-icon"></i>
+            <div class="cart">
+                <h2 class="h2 cart-title">Your Cart</h2>
+                <div class="cart-content">
+                    <div class="cart-box">
+                        <img src="https://th.bing.com/th/id/OIP.lW7hosughZhqtPp5_Quy3QHaHa?w=172&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="" class="cat-img">
+                        <div class="detail-box">
+                            <div class="cart-product-title">Iphone</div>
+                            <div class="cart-price">$25</div>
+                            <input type="number" value="1" class="cart-quantity">
+                        </div>
+                        <i class='bx bxs-trash-alt cart-remove'></i>                    
+                    </div>
+                </div>
+                <div class="total">
+                    <div class="total-title">Title</div>
+                    <div class="total-price">$0</div>
+                </div>
+                <button type="button" class="btn-buy">Buy Now</button>
+                <i class='bx bx-x' id="close-cart"></i>
+            </div>
+        </div>
+    
+    </header>
+
+    <div class="carousel relative container mx-auto" style="max-width:1600px;">
+        <div class="carousel-inner relative overflow-hidden w-full">
+            <!--Slide 1-->
+            <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+            <div class="carousel-item absolute opacity-0" style="height:50vh;">
+                <div class="block h-full w-full mx-auto flex pt-6 md:pt-0 md:items-center bg-cover bg-right" style="background-image: url('https://images.unsplash.com/photo-1422190441165-ec2956dc9ecc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1600&q=80');">
+
+                    <div class="container mx-auto">
+                        <div class="flex flex-col w-full lg:w-1/2 md:ml-16 items-center md:items-start px-6 tracking-wide">
+                            <p class="text-black text-2xl my-4">Stripy Zig Zag Jigsaw Pillow and Duvet Set</p>
+                            <a class="text-xl inline-block no-underline border-b border-gray-600 leading-relaxed hover:text-black hover:border-black" href="#">view product</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <label for="carousel-3" class="prev control-1 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-gray-900 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+            <label for="carousel-2" class="next control-1 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-gray-900 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+
+            <!--Slide 2-->
+            <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+            <div class="carousel-item absolute opacity-0 bg-cover bg-right" style="height:50vh;">
+                <div class="block h-full w-full mx-auto flex pt-6 md:pt-0 md:items-center bg-cover bg-right" style="background-image: url('https://images.unsplash.com/photo-1533090161767-e6ffed986c88?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjM0MTM2fQ&auto=format&fit=crop&w=1600&q=80');">
+
+                    <div class="container mx-auto">
+                        <div class="flex flex-col w-full lg:w-1/2 md:ml-16 items-center md:items-start px-6 tracking-wide">
+                            <p class="text-black text-2xl my-4">Real Bamboo Wall Clock</p>
+                            <a class="text-xl inline-block no-underline border-b border-gray-600 leading-relaxed hover:text-black hover:border-black" href="#">view product</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <label for="carousel-1" class="prev control-2 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+            <label for="carousel-3" class="next control-2 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+
+            <!--Slide 3-->
+            <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+            <div class="carousel-item absolute opacity-0" style="height:50vh;">
+                <div class="block h-full w-full mx-auto flex pt-6 md:pt-0 md:items-center bg-cover bg-bottom" style="background-image: url('https://images.unsplash.com/photo-1519327232521-1ea2c736d34d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1600&q=80');">
+
+                    <div class="container mx-auto">
+                        <div class="flex flex-col w-full lg:w-1/2 md:ml-16 items-center md:items-start px-6 tracking-wide">
+                            <p class="text-black text-2xl my-4">Brown and blue hardbound book</p>
+                            <a class="text-xl inline-block no-underline border-b border-gray-600 leading-relaxed hover:text-black hover:border-black" href="#">view product</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <label for="carousel-2" class="prev control-3 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+            <label for="carousel-1" class="next control-3 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-gray-900  leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+
+            <!-- Add additional indicators for each slide-->
+            <ol class="carousel-indicators">
+                <li class="inline-block mr-3">
+                    <label for="carousel-1" class="carousel-bullet cursor-pointer block text-4xl text-gray-400 hover:text-gray-900">•</label>
+                </li>
+                <li class="inline-block mr-3">
+                    <label for="carousel-2" class="carousel-bullet cursor-pointer block text-4xl text-gray-400 hover:text-gray-900">•</label>
+                </li>
+                <li class="inline-block mr-3">
+                    <label for="carousel-3" class="carousel-bullet cursor-pointer block text-4xl text-gray-400 hover:text-gray-900">•</label>
+                </li>
+            </ol>
+
+        </div>
+    </div>
+
+    <section class="shop container">
+        <h2 class="section-title">Shop Products</h2>
+        <div class="shop-content">
+            <div class="product-box">
+                <img src="https://images.unsplash.com/photo-1508423134147-addf71308178?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80" alt="" class="product-img">
+                <h2 class="product-title">Iphone 12</h2>
+                <span class="price">$25</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <div class="product-box">
+                <img src="https://images.unsplash.com/photo-1555982105-d25af4182e4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80" alt="" class="product-img">
+                <h2 class="product-title">Iphone 11</h2>
+                <span class="price">$25</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            
+            <div class="product-box">
+                <img src="https://images.unsplash.com/photo-1449247709967-d4461a6a6103?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80" alt="" class="product-img">
+                <h2 class="product-title">Iphone 13</h2>
+                <span class="price">$25</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            
+            <div class="product-box">
+                <img src="https://images.unsplash.com/reserve/LJIZlzHgQ7WPSh5KVTCB_Typewriter.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80" alt="" class="product-img">
+                <h2 class="product-title">Iphone X</h2>
+                <span class="price">$25</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            
+            <div class="product-box">
+                <img src="https://images.unsplash.com/photo-1467949576168-6ce8e2df4e13?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80" alt="" class="product-img">
+                <h2 class="product-title">Iphone 14</h2>
+                <span class="price">$25</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80" alt="" class="product-img">
+                <h2 class="product-title">Iphone 14</h2>
+                <span class="price">$25</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="https://images.unsplash.com/photo-1550837368-6594235de85c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80" alt="" class="product-img">
+                <h2 class="product-title">Iphone 14</h2>
+                <span class="price">$25</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="https://images.unsplash.com/photo-1551431009-a802eeec77b1?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&h=400&q=80" alt="" class="product-img">
+                <h2 class="product-title">Iphone 14</h2>
+                <span class="price">$25</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            
+        </div>
+
+    </section>
+
+    <section id="services">
+        <div class="container text-center">
+          <h1 class="title">Our Benefits</h1>
+          <div class="row text-center">
+            <div class="col-md-4 services">
+              <img src="images/03n04b5x43osezun4tq60xd48m1snxno.png" class="service-img">
+              <h4>Speed</h4>
+              <p>Average repair time is 15 minutes.</p>
+            </div>
+            <div class="col-md-4 services">
+              <img src="images/v8el8kdrhu19clk8apxriaytfp6vio6n.png" class="service-img">
+              <h4>Free diagnostics</h4>
+              <p>Diagnostics of your device is made completely free of charge, even in case of refusal to repair</p>
+            </div>
+            <div class="col-md-4 services">
+              <img src="images/y6uweftiynchhtpfqjnicb3s7h3ym7g1.png" class="service-img">
+              <h4>Guarantee</h4>
+              <p>We are confident in the quality of our spare parts and provide a guarantee for all types of work from 60 to 180 days.</p>
+            </div>
+          </div>
+        </div>
+        <button type="button " class="btn btn-primary">All Services</button>
+      </section>
+    
+
+
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
